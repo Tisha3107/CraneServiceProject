@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Services - CranePro Services</title>
+    <link rel="stylesheet" href="dashboard.css"> <!-- Link to your dashboard CSS file for styling -->
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.admin-container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.service-actions {
+    margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.back-button {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling for the back arrow link */
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+    </style>
+</head>
+<body>
+    <p><a href="admin.html" class="back-arrow">&#8592; Go Back</a></p>
+    <div class="admin-container">
+        <header>
+            <div class="header-title">Admin Services</div>
+            <div class="user-profile">
+                <img src="https://c1.alamy.com/thumbs/tcxt95/admin-icon-vector-male-user-person-profile-avatar-with-gear-cogwheel-for-settings-and-configuration-in-flat-color-glyph-pictogram-illustration-tcxt95.jpg" alt="User Avatar" class="user-avatar">
+                <span>Admin</span>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin_services.html" class="active">Services</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+        <main>
+            <section class="service-management">
+                <h2 class="section-title">Service Management</h2>
+                <div class="service-card">
+                    <h3 class="service-title">CONSTRUCTION CAR RENTAL</h3>
+                    <p class="service-description">We provide top-notch construction crane rental services...</p>
+                    <div class="service-actions">
+                        <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">HEAVY MACHINERY LIFTING</h3>
+                    <p class="service-description">Our heavy machinery lifting services ensure efficient and safe...</p>
+                    <div class="service-actions">
+                        <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+                    </div>
+                </div>
+                
+        <div class="service-card">
+            <h3 class="service-title">CONSTRUCTION CRANE RENTAL</h3>
+            <p class="service-description">We provide top-notch construction crane rental services...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">HEAVY MACHINERY LIFTING</h3>
+            <p class="service-description">Our heavy machinery lifting services ensure efficient and safe...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">CRANE MAINTENANCE SERVICE</h3>
+            <p class="service-description">Comprehensive maintenance services to keep your cranes operating smoothly...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">RIGGING AND ASSEMBLY</h3>
+            <p class="service-description">Expert rigging and assembly solutions for complex construction projects...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">EMERGENCY RESPONSE SERVICES</h3>
+            <p class="service-description">24/7 emergency crane services for unforeseen construction needs...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">STRUCTURAL DEMOLITION</h3>
+            <p class="service-description">Efficient and controlled demolition of structures using advanced techniques...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">MATERIAL TRANSPORT SOLUTIONS</h3>
+            <p class="service-description">Safe and reliable material transport services for construction sites...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3 class="service-title">CRANE OPERATOR TRAINING</h3>
+            <p class="service-description">Comprehensive training programs for skilled crane operators...</p>
+            <div class="service-actions">
+                <button class="edit-button">EDIT</button>
+                        <button class="delete-button">DELETE</button>
+            </div>
+        </div>
+        <!-- Add more service cards as needed -->
+    
+                <!-- Add more service cards as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>

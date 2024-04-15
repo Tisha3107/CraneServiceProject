@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Add your CSS links here -->
+    <style>
+       /* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.admin-container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.back-button {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling for the back arrow link */
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
+    }
+
+    .user-profile {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user-avatar {
+        margin-right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <p><a href="index.html" class="back-arrow">&#8592; Go Back</a></p>
+    <header>
+        <h1>MASTAN CRANE SERVICE</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">DASHBOARD</a></li>
+                <li><a href="admin_service.html">SERVICES</a></li>
+                <li><a href="admin_project.html">PROJECTS</a></li>
+                <li><a href="admin_feedback.html">FEEDBACK</a></li>
+                <li><a href="blogs.html">BLOGS</a></li>
+                <li><a href="admin_setting.html">SETTINGS</a></li>
+                <li><a href="index.html">LOGOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ... Previous HTML structure ... -->
+
+<main>
+    <section class="dashboard-overview">
+        <h2 style="font-family : unset" class="section-title">Dashboard Overview</h2>
+        <div class="card">
+            <h3 style="font-family : unset" class="card-title">Report </h3><br>
+            <p style="font-family : unset" class="card-content">Currently, there are 150 registered users on the platform.</p><br>
+            <form action="TotalUsers.html" method="POST">
+                <button class="btn">View Details</button></form>
+        </div>
+        <div class="card">
+            <h3 class="card-title">Recent Activities</h3><br>
+            <p class="card-content">View recent activities, such as user logins, content updates, and more.</p><br>
+            <button>View Activities</button>
+        </div>
+    </section>
+    <hr>
+    <section class="quick-actions">
+        <h2 class="section-title">Quick Actions</h2><br>
+        <button>ADD NEW SERVICE</button> &nbsp;&nbsp;&nbsp;
+        <button>CREATE PROJECT</button> &nbsp;&nbsp;&nbsp;
+        <button>MANAGE USERS</button>
+    </section><BR>
+    <hr>
+    <section class="notifications">
+        <h2 class="section-title">Notifications</h2>
+        <ul>
+            <li>New message received</li>
+            <li>System update available</li>
+            <li>User feedback received</li>
+            <!-- Add more notifications as needed -->
+        </ul>
+    </section><br>
+    <hr>
+    <section class="recent-projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="project-card">
+            <h3 class="project-title">Skyscraper Installation</h3><br>
+            <p class="project-description">Completed the installation of a 50-story skyscraper in downtown.</p><br>
+            <p class="project-date">Completion Date: July 25, 2023</p><br>
+            <button>View Project</button><br><br>
+        </div><hr><hr>
+        <div class="project-card">
+            <h3 class="project-title">Bridge Construction</h3><br>
+            <p class="project-description">Successfully built a new bridge spanning across the river.</p><br>
+            <p class="project-date">Completion Date: August 5, 2023</p><br>
+            <button>View Project</button><br><br>
+        </div><hr><hr>
+        
+        <div class="project-card">
+            <h3 class="project-title">Hospital Expansion</h3><br>
+            <p class="project-description">Expanded the local hospital's facilities to accommodate more patients.</p><br>
+        <p class="project-date">Completion Date: September 12, 2023</p><br>
+        <button>View Project</button><br><br>
+    </div><hr><hr>
+    <div class="project-card">
+        <h3 class="project-title">Shopping Mall Renovation</h3><br>
+        <p class="project-description">Completed the renovation of a popular shopping mall to enhance customer experience.</p><br>
+        <p class="project-date">Completion Date: August 28, 2023</p><br>
+        <button>View Project</button><br><br>
+    </div><hr><hr>
+    <div class="project-card">
+        <h3 class="project-title">Office Building Construction</h3><br>
+        <p class="project-description">Started construction of a modern office building with state-of-the-art facilities.</p><br>
+        <p class="project-date">Estimated Completion: December 2023</p><br>
+        <button>View Project</button><br><br>
+    </div><hr><hr>
+    <div class="project-card">
+        <h3 class="project-title">Park Development</h3><br>
+        <p class="project-description">Initiated the development of a new park area for recreational activities and green spaces.</p><br>
+        <p class="project-date">Ongoing</p><br>
+        <button>View Project</button><br><br>
+    </div>
+        <!-- Add more project cards as needed -->
+    </section>
+</main>
+
+<!-- ... Rest of the HTML ... -->
+
+    <footer>
+        <p>&copy; 2023 CranePro Services. All rights reserved.</p>
+    </footer>
+</body>
+</html>

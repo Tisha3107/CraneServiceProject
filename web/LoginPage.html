@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0-beta3/css/all.min.css" integrity="sha512-W1f8o2j+A4ZpYibps3bVJb2HJUizfKu1Ir2BA5cvAZJS4eOjU4BbF4n7DZJzIJ9pTgNts5B/6Nt3m/AVl2G2Zw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            background: linear-gradient(135deg, #3498db, #e74c3c);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .container h1 {
+            background: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .form-group {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .toggle-form {
+            cursor: pointer;
+            color: #fff;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .toggle-form:hover {
+            color: #3498db;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-form {
+            animation: fadeIn 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" action="InsertDataServ" method="get" class="form-group animated-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" onclick="myFunction()" value="Login" >
+        </form>
+
+        <h1>Register</h1>
+        <form id="registerForm" action="UserRegServ" method="get" class="form-group animated-form"  style="display: none; ">
+            <label for="registerusername">Username:</label>
+            <input type="text" id="registerusername" name="registerusername" required>
+            
+            <label for="uemail">Email</label>
+            <input type="text" id="uemail" name="uemail" required>
+            
+            <label for="registerpassword">Password:</label>
+            <input type="password" id="registerpassword" name="registerpassword" required>
+
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required>
+
+            <input type="submit" value="Register" >
+        </form>
+
+        <p class="toggle-form" id="toggleForm">Switch to Registration</p>
+    </div>
+
+    <script>
+        function myFunction() {
+  alert("You have successfully logged in !! Thankyou!!");
+}
+        
+        const loginForm = document.getElementById('loginForm');
+        const registerForm = document.getElementById('registerForm');
+        const toggleForm = document.getElementById('toggleForm');
+
+        toggleForm.addEventListener('click', () => {
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+                toggleForm.textContent = 'Switch to Registration';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+                toggleForm.textContent = 'Switch to Login';
+            }
+        });
+    </script>
+</body>
+</html>

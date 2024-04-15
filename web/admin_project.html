@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Projects - CranePro Services</title>
+    <link rel="stylesheet" href="dashboard.css"> <!-- Link to your dashboard CSS file for styling -->
+    <style>
+        /* dashboard.css */
+/* This is a simplified version of the CSS for demonstration purposes */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.admin-container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-title {
+    font-size: 24px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.project-actions {
+    margin-top: 10px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #0056b3;
+}
+
+.active {
+    font-weight: bold;
+}
+
+
+.back-button {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling for the back arrow link */
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+    </style>
+</head>
+<body>
+     <p><a href="admin.html" class="back-arrow">&#8592; Go Back</a></p>
+    <div class="admin-container">
+        <header>
+            <div class="header-title">Admin Projects</div>
+            <div class="user-profile">
+                <img src="https://c1.alamy.com/thumbs/tcxt95/admin-icon-vector-male-user-person-profile-avatar-with-gear-cogwheel-for-settings-and-configuration-in-flat-color-glyph-pictogram-illustration-tcxt95.jpg" alt="User Avatar" class="user-avatar">
+                <span>Admin</span>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin_projects.html" class="active">Projects</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+        <main>
+            <section class="project-management">
+                <h2 class="section-title">Project Management</h2>
+                <div class="project-card">
+                    <h3 class="project-title">Skyscraper Construction</h3>
+                    <p style="font-family : unset" class="project-description">Construction of a 50-story skyscraper...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Bridge Reconstruction</h3>
+                    <p style="font-family : unset" class="project-description">Reconstruction of a major city bridge...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Hospital Expansion</h3>
+                    <p style="font-family : unset" class="project-description">Expanding a local hospital to accommodate more patients...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Shopping Mall Renovation</h3>
+                    <p style="font-family : unset" class="project-description">Renovating a shopping mall to enhance customer experience...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Office Building Construction</h3>
+                    <p style="font-family : unset" class="project-description">Constructing a modern office building with state-of-the-art facilities...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Park Development</h3>
+                    <p style="font-family : unset" class="project-description">Developing a new park area for recreational activities and green spaces...</p>
+                    <div class="project-actions">
+                        <button class="edit-button">Edit</button>
+                        <button class="delete-button">Delete</button>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </section>
+        </main>
+    </div>
+</body>
+</html>

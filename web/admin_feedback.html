@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Feedback View</title>
+    <style>
+        /* Add these styles to your existing CSS */
+
+/* Add these styles to your existing CSS */
+
+/* Reset some default styling */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling for the back arrow link */
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    padding: 0.5em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 1em;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.feedback {
+    margin-bottom: 20px;
+}
+
+.feedback h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.client-name {
+    font-weight: bold;
+}
+
+.feedback-text {
+    margin-top: 10px;
+}
+
+.feedback-date {
+    margin-top: 10px;
+    font-style: italic;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+/* The existing CSS styles remain unchanged */
+
+/* Additional styles for more feedback items */
+.feedback-item:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.feedback-item:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* The existing CSS styles remain unchanged */
+
+/* Add these styles for the edit and delete buttons */
+.feedback-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.edit-btn {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #2c3e50;
+}
+
+/* The existing CSS styles remain unchanged */
+
+/* Additional styles for more feedback items */
+.feedback-item:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.feedback-item:nth-child(odd) {
+    background-color: #fff;
+}
+
+.feedback {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Feedback Items */
+.feedback-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.client-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback-text {
+    margin-bottom: 10px;
+}
+
+.feedback-date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Feedback Actions */
+.feedback-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn {
+    background-color: #3f51b5;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background-color: #30418f;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Add responsive styles for smaller screens if needed */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav {
+        text-align: center;
+    }
+}
+
+
+/* Rest of your styles */
+
+    </style>
+    
+</head>
+<body>
+     <p><a href="admin.html" class="back-arrow">&#8592; Go Back</a></p>
+    <header>
+        <h1>Admin Feedback View</h1>
+    </header>
+    <nav>
+        <!-- Navigation links or menu if needed -->
+    </nav>
+    <!-- Same HTML structure as before -->
+
+<main>
+    <div class="feedback">
+        <h2>Feedback from Clients</h2>
+        <div class="feedback-item">
+            <p style="font-family : sans-serif" class="client-name">RAJESH ARORA</p>
+            <p style="font-family : cursive" class="feedback-text">Excellent service! The crane operators were highly skilled and professional.</p>
+            <p class="feedback-date">Posted on: August 15, 2023</p>
+            <div class="feedback-actions">
+                <button class="edit-btn">ADD TO HOMEPAGE</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <p style="font-family : sans-serif" class="client-name">VIKAS ROY</p>
+            <p style="font-family : cursive" class="feedback-text">Impressive teamwork and efficiency. The project was completed ahead of schedule.</p>
+            <p class="feedback-date">Posted on: August 18, 2023</p>
+            <div class="feedback-actions">
+                <button class="edit-btn">ADD TO HOMEPAGE</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <p style="font-family : sans-serif" class="client-name">ANDREW CLAUS</p>
+            <p style="font-family : cursive" class="feedback-text">Outstanding crane services! Your team's attention to detail made a significant difference in our project's success.</p>
+            <p class="feedback-date">Posted on: August 22, 2023</p>
+            <div class="feedback-actions">
+                <button class="edit-btn">ADD TO HOMEPAGE</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+        <div class="feedback-item">
+            <p style="font-family : sans-serif" class="client-name">EDWARD CULLEN</p>
+            <p style="font-family : cursive" class="feedback-text">I was impressed by your prompt response and professionalism. Your crane operators made the complex lifts look easy.</p>
+            <p class="feedback-date">Posted on: August 28, 2023</p>
+            <div class="feedback-actions">
+                <button class="edit-btn">ADD TO HOMEPAGE</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+        <!-- Add more feedback items with edit and delete buttons -->
+    </div>
+</main>
+<!-- Rest of the HTML remains the same -->
+
+    <footer>
+        <p>&copy; 2023 Crane Services. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

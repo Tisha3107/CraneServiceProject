@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ABOUT US</title>
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <style>
+        
+:root{
+	--input-padding-x: 1.5rem;
+	--input-padding-y: 0.75rem;
+}
+
+
+body,
+html{
+	width: 100%;
+	height: 100%;
+}
+
+.btn{
+	font-family: 'Kanit',sans-serif;
+}
+
+.btn-success{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+}
+
+.btn-success:hover{
+	background-color: #242424;
+	border-color: #242424;
+	color: #fff;
+}
+
+.masthead2{
+
+	background-image: url("../img/backgroundimage.jpg");
+	background-position: 50% -26px;
+	background-color:#242424;
+
+}
+
+a.social-icon{
+	color:#242424;
+}
+
+a.social-icon:hover{
+	color:#c0aa83;
+}
+
+.social-icon{
+	background-color: #ECE4C3;
+	width: 80px;
+	height: 80px;
+	padding:20px;
+	margin: 10px;
+}
+
+.social-icon a{
+	background-color: #B98C45;
+	width: 50px;
+	height: 50px;
+	padding:10px 16px;
+	margin-right: 6px;
+	position: relative;
+	display: block;
+
+}
+
+.social-icon a:hover{
+	color:#242424;
+
+}
+
+
+.page-section{
+	padding: 8rem 0;
+}
+
+.main-menu{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+a.link-menu{
+	text-decoration: none;
+	color: #c0aa83;
+}
+
+.footer-info{
+	background-color: #000;
+}
+
+.scroll-to-top{
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color:#242424;
+	background: #c0aa83;
+	line-height: 46px;
+} 
+
+.scroll-to-top:focus,.scroll-to-top:hover{
+	color:#242424;
+}
+
+.scroll-to-top:hover{
+	color:#c0aa83;
+}
+
+.rounded {
+	border-radius: 0.25rem !important;
+}
+
+.footer-title{
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 46px;
+}
+
+.copyright{
+	color:#c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+
+#mainNav{
+	-webkit-box-shadow: 0.05rem 1rem rgba(0, 0, 0, 0.15);
+	box-shadow: 0.05rem 1rem rgba(0, 0, 0, 0.15);
+	background-color: #fff;
+	-webkit-transition: background-color 0.2s ease; 
+	transition: background-color 0.2s ease; 
+}
+
+#mainNav .navbar-brand {
+
+	font-family: 'Kanit',sans-serif;
+	font-weight: 700;
+
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+	color:#242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding:0.75rem 0;
+}
+
+.navbar-nav{
+	display: -webkit-box;
+	display: -ms-box;
+	display: flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.nav-item .nav-link{
+	padding-left: 0; 
+	padding-right: 0; 
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover{
+  color: #c0aa83 !important;
+}
+
+li.nav-item {
+  display: inline;
+  padding: 10px;
+}
+
+.btn-light{
+	background-color: #c0aa83;
+	border-color: #c0aa83;
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.btn-light:hover{
+	background-color: #fff;
+	border-color: #c0aa83;
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.btn-dark{
+	background-color: #242424;
+	border-color: #242424;
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.btn-dark:hover{
+	background-color: #fff;
+	border-color: #242424;
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+
+}
+
+.boxed{
+	background-color: #c0aa83;
+	height: 150px;
+	margin-left: 80px;
+	margin-right: 80px;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+
+.subscribe-section{
+	background-image: url("../img/footer_map.png");
+	background-color:#242424;
+}
+
+.contact-heading{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.contact-info{
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 18px;
+}
+
+a.explore-link{
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+a.explore-link:hover{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.logo-text-white{
+	color: #fff;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+}
+
+/*PRODUCT PAGE STYLING*/
+
+.blog-sidebar-title{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.blog-sidebar-list{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+.blog-sidebar-text{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+.blog-form{
+	background-color: #F4F4F4; 
+	padding: 50px;
+	height: 1000px;
+}
+
+.list-icon{
+
+	color: #c0aa83;
+
+}
+
+.tags{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.tags{
+	color: #242424;
+	font-family: 'Kanit',sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+
+
+.product-sidebar-list{
+	color: #242424;
+}
+
+.product-sidebar-list:hover{
+	color: #c0aa83;
+}
+
+.card-title{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.card-text{
+	font-family: 'Kanit',sans-serif;
+	font-size: 13px;
+}
+
+.price-tag{
+	color: #c0aa83;
+	font-family: 'Kanit',sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+.button-text{
+	font-family: 'Kanit',sans-serif;
+	font-size: 14px;
+	font-weight: 900;
+}
+
+.product-image{
+	width: 200px;
+	height: 200px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!--/Header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light stroke py-lg-0">
+                <h1><a class="navbar-brand" href="index.html">
+                        <i class="fas fa-truck-moving"></i> MASTAN CRANE SERVICES
+                    </a></h1>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Hire.html">HIRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Buy.html">BUY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>&nbsp;
+                         <li>
+                             <a class="nav-link" href="contact.html">CONTACT</a>
+                         </li> &nbsp;
+                                
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                MORE
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="LoginPage.html">LOGIN</a></li>
+                                <li><a class="dropdown-item" href="reviews.html">TESTIMONIALS</a></li>
+                                <li><a class="dropdown-item" href="user_project.html">PROJECTS</a></li>
+                                <li><a class="dropdown-item" href="user_blogs.html">BLOGS</a></li>
+                                <li><a class="dropdown-item" href="jobs.html">JOBS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--/search-->
+                    <button id="trigger-overlay" class="searchw3-icon mx-xl-4 mx-lg-3" type="button"><i class="fas fa-search"></i></button>
+                    <!-- open/close -->
+                    <div class="overlay overlay-slidedown">
+                        <button type="button" class="overlay-close"><i class="fas fa-times"></i></button>
+                        <nav class="w3l-formhny">
+                            <h5 class="mb-3">SEARCH HERE</h5>
+                            <form action="#" method="GET" class="d-sm-flex search-header">
+                                <input class="form-control me-2" type="search" placeholder="Search here..." aria-label="Search" required>
+                                <button class="btn btn-style btn-primary" type="submit">SEARCH</button>
+                            </form>
+                        </nav>
+                    </div>
+                    <!--//search-->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+</header>
+    <!--//Header-->
+    <!--/inner-page-->
+<div class="inner-banner py-5">
+        <section class="w3l-breadcrumb text-left py-sm-5 ">
+            <div class="container">
+                <div class="w3breadcrumb-gids">
+                    <div class="w3breadcrumb-left text-left">
+                        <h2 class="inner-w3-title mt-lg-5 mt-4">
+                            ABOUT US </h2>
+                    </div>
+                    <div class="w3breadcrumb-right">
+                        <ul class="breadcrumbs-custom-path">
+                            <li><a href="index.html">HOME</a></li>
+                            <li class="active"><span class="fas fa-angle-double-right mx-2"></span> ABOUT US</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <!--//inner-page-->
+    <!--/about-page-->
+    <section class="w3l-ab-page py-5" id="about1">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row align-items-center">
+                <div class="col-lg-6 pe-lg-5">
+                    <h6 class="title-subw3hny mb-2">WHAT WE DO?</h6>
+                    <h3 class="title-w3l mb-2">We, Mastan Crane Services situated at Goregaon East, Mumbai, Maharashtra,
+                    </h3>
+
+                    <p class="mt-3"><b> are specialised in providing best cranes to different project sites 
+                        of private and public sectors. We also have a vast experience in equipment erection under 
+                        highly experienced workforce. We are working as an aggregator that also provides mobile cranes 
+                        on a rental basis across the city. Not only this but also cranes of different types that perfectly 
+                        suits the construction type.</b></p>
+                    <div class="row two-grids mt-5 pt-lg-4">
+                        <div class="col-sm-6 grids_info d-flex">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <div class="detail ms-3">
+                                <h4>Achivements
+                                <p>Leader in supplying World Class Cranes, Since 30 Glorious Years.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 grids_info d-flex mt-sm-0 mt-4">
+                            <i class="fas fa-globe"></i>
+                            <div class="detail ms-3">
+                                <h4>
+                                    Worldwide Service</h4>
+                                <p>Ranked Amongst Top 5 Crane Rental Companies in India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1 text-end mt-lg-0 mt-5 position-relative">
+                    <img src="https://c4.wallpaperflare.com/wallpaper/312/70/499/ariel-boom-construction-crane-wallpaper-preview.jpg" alt="" class="img-fluid radius-image">
+                    <div class="imginfo__box">
+                        <h6 class="imginfo__title">36+</h6>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--//about-page-->
+    <!--/w3-grids-->
+    <section class="w3l-stats-section py-5 pt-0" id="stats">
+        <div class="container py-md-5 pt-0">
+            <div class="w3l-stats-inner-inf">
+                <div class="row stats-con">
+                    <div class="col-lg-3 col-6 stats_info counter_grid">
+                        <p class="counter">2500+ </p>
+                        <h3>Delivered Cranes</h3>
+                    </div>
+                    <div class="col-lg-3 col-6 stats_info counter_grid">
+                        <p class="counter">200+ </p>
+                        <h3>Expert Technicians</h3>
+                    </div>
+                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
+                        <p class="counter">1280+ </p>
+                        <h3>Business Success</h3>
+                    </div>
+                    <div class="col-lg-3 col-6 stats_info counter_grid mt-lg-0 mt-4">
+                        <p class="counter">3020+</p>
+                        <h3>Happy Clients</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3-grids-->
+
+    <!--/w3l-join-main-->
+    <section class="w3l-join-main py-5">
+        <div class="container py-md-5">
+            <div class="w3l-project-in">
+                <div class="row bottom-info text-left">
+                    <div class="col-lg-7 w3l-project-in-left pe-lg-5">
+                        <h6 class="title-subw3hny mb-2">Mastan Crane Service</h6>
+                        <h3 class="title-w3l two mb-2">"LET OUR 30+ YEARS OF EXPERIENCE DO THE HEAVY LIFTING FOR YOU".
+                        </h3>
+
+
+                    </div>
+                    <div class="col-lg-5 w3l-project-in-right">
+                        <div class="w3banner-content-btns">
+                            <a href="about.html" class="btn btn-style btn-white mt-4">READ MORE </a>
+                            <a href="contact.html" class="btn btn-style btn-primary mt-4 ms-3">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//w3l-join-main-->
+    <!--/team-sec-->
+    <section class="w3l-team-main team py-5" id="team">
+        <div class="container py-lg-5">
+            <div class="title-content text-center mb-2">
+                <h6 class="title-subw3hny mb-1">OUR TEAM</h6>
+                <h3 class="title-w3l">OUR EXPERIENCED SUPERVISORS</h3>
+            </div>
+            <div class="row team-row justify-content-center">
+                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
+                    <div class="team-member text-center">
+                        <div class="team-img">
+                            <img src="assets/images/Papa1.jpg" alt="" class="radius-image">
+                           
+                            <div class="overlay-team">
+                                <div class="team-details text-center">
+                                    <div class="socials mt-20">
+                                        <a href="#url">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-linkedin-in"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#url" class="team-title">KRISHNA VERMA</a>
+                        <p>HEAD SUPERVISOR</p>
+                    </div>
+                </div>
+                <!-- end team member -->
+                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
+                    <div class="team-member text-center">
+                        <div class="team-img">
+                            <img src="assets/images/team3.jpg" alt="" class="radius-image">
+                            <div class="overlay-team">
+                                <div class="team-details text-center">
+                                    <div class="socials mt-20">
+                                        <a href="#url">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-linkedin-in"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#url" class="team-title">SHAHID SIDDIQUE</a>
+                        <p>SELLING AGENT</p>
+                    </div>
+                </div>
+                <!-- end team member -->
+                <div class="col-lg-4 col-6 team-wrap mt-lg-5 mt-4">
+                    <div class="team-member text-center">
+                        <div class="team-img">
+                            <img src="assets/images/team2.jpg" alt="" class="radius-image">
+                            <div class="overlay-team">
+                                <div class="team-details text-center">
+                                    <div class="socials mt-20">
+                                        <a href="#url">
+                                            <span class="fab fa-facebook-f"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-twitter"></span>
+                                        </a>
+                                        <a href="#url">
+                                            <span class="fab fa-linkedin-in"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#url" class="team-title">SHAHID SIDDIQUE</a>
+                        <p>SELLING AGENT</p>
+
+                    </div>
+                </div>
+                <!-- end team member -->
+            </div>
+
+        </div>
+    </section>
+    <!--//team-sec-->
+    <!--/faq-section-->
+    <div class="w3l-faq-block py-5" id="faq">
+        <div class="container content-gd py-lg-5">
+            <div class="row mt-3">
+                <div class="col-lg-6 faqw3-right pe-lg-5">
+                    <div class="faqw3content text-left">
+                        <h6 class="title-subw3hny mb-1 text-left">Ask by Client</h6>
+                        <h3 class="title-w3l mb-2">Frequently Asked Questions</h3>
+                    </div>
+                    <p class="mb-3">No matter if you are a Crane Owner. A Crane Service Provider, or an Orignal Equipment Manufacturer(OEM), we have a solution for you all.
+                    </p>
+                    
+                </div>
+                <div class="col-lg-6 faqw3-left">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    01. What is an SLI System?
+                                </button>
+                            </h4>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Safe Load Indicator is a safety control unit mounted in the crane’s cabin to alert the operator 
+                                    if the lift is exceeding the safe operating range of the machinery.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    02.Is it Necessary to install SLI System in our Crane??
+                                </button>
+                            </h4>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, Its necessary and important to avoid any future accident while working with materials without knowing the actual load and rated crane capacity.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    03.What if We Have Old Crane dose your SLI System Support our Crane operation??
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes Off course, As per your Crane capacity chart we will make a custom SLI system that match your Crane and Its Operation
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    04.We have pre-installed SLI System, still its need to update?
+                                </button>
+                            </h4>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Yes, sometime pre fitted safety System are inadequate to protect hence we recommend to talk our Crane safety system officer and know the best suited solution for your crane.
+                                </div>
+                            </div>
+                        </div>
+                                                
+                        <div class="accordion-item">
+                            <h4 class="accordion-header" id="headingFourth">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourth" aria-expanded="false" aria-controls="collapseFourth">
+                                    05.What is an Anti-two Block Switch?
+                                </button>
+                            </h4>
+                            <div id="collapseFourth" class="accordion-collapse collapse" aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Over-hoist Switch measures the distance between the lifting hook block & Head of the boom crane, which avoids the collision between them and alerts the operator by sending signals via the SLI.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- //faq-section -->
+    <!--/footer-9-->
+    <footer class="w3l-footer9">
+        <section class="footer-inner-main py-5">
+            <div class="container py-md-4">
+                <div class="right-side">
+                    <div class="row footer-hny-grids sub-columns">
+                        <div class="col-lg-4 sub-one-left pe-lg-5">
+                            <h2><a class="navbar-brand" href="index.html">
+                                    <i class="fas fa-truck-moving"></i> MASTAN CRANES
+                                </a></h2>
+                            <p class="footer-phny mt-3">Leading the global overhead crane industry with the largest service network and a complete range of lifting equipment.</p>
+                            <div class="columns-2 mt-4 pt-lg-2">
+                                <ul class="social">
+                                    <li><a href="#facebook"><span class="fab fa-facebook-f"></span></a>
+                                    </li>
+                                    <li><a href="#linkedin"><span class="fab fa-linkedin-in"></span></a>
+                                    </li>
+                                    <li><a href="#twitter"><span class="fab fa-twitter"></span></a>
+                                    </li>
+                                    <li><a href="#google"><span class="fab fa-google-plus-g"></span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 sub-two-right">
+                            <div class="row">
+                                <div class="col-lg-3 sub-two-right">
+                                    <h6>WHO WE ARE?</h6>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a>
+                                        </li>
+                                        <li><a href="about.html"> Our Team</a>
+                                        </li>
+                                        <li><a href="#news">News & Media</a>
+                                        </li>
+                                        <li><a href="contact.html"> Work With Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 sub-two-right">
+                                    <h6>WHAT WE DO?</h6>
+                                    <ul>
+                                        <li><a href="#warehousing">Warehousing</a>
+                                        </li>
+                                        <li><a href="#air">Construction Site</a>
+                                        </li>
+                                        <li><a href="#ocean">Ocean Freight</a>
+                                        </li>
+                                        <li><a href="#road">Road Freight</a>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 sub-two-right">
+                                    <h6>COMPANY</h6>
+                                    <ul>
+                                        <li><a href="#job"> Job Application</a>
+                                        </li>
+                                        <li><a href="#posts">News</a>
+                                        </li>
+                                        <li><a href="#support"> Support 24/7</a>
+                                        </li>
+                                        <li><a href="#story"> User Stories</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-3 sub-two-right">
+                                    <h6>MORE INFO</h6>
+                                    <ul>
+                                        
+                                        <li><a href="#metal"> Easy Payment</a>
+                                        </li>
+                                        <li><a href="#delivery"> Fast Delivery</a>
+                                        </li>
+                                        <li><a href="#faq"> FAQS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="below-section mt-lg-5 pt-lg-4">
+                    <div class="copyright-footer">
+                        <p class="copyright-column">Copyright© 2024 Mastan Crane Services. All rights reserved. Design by TISHA VERMA
+                                </p>
+
+                        <ul class="footer-w3list text-right">
+                            <li><a href="#url">Privacy Policy</a>
+                            </li>
+                            <li><a href="#url">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Js scripts -->
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+        </script>
+        <!-- //move top -->
+    </footer>
+    <!--//footer-9 -->
+
+    <!-- Template JavaScript -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/theme-change.js"></script>
+    <!--/search-->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/demo1.js"></script>
+    <!--//search-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function() {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function() {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function() {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function() {
+            $('.navbar-toggler').click(function() {
+                $('body').toggleClass('noscroll');
+            })
+        });
+
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+    <!-- //bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings - Mastan Crane Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        /* Container styles */
+        .admin-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #3f51b5;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            background-color: #f4f4f4;
+            border-top: 2px solid #3f51b5;
+            border-bottom: 2px solid #3f51b5;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3f51b5;
+        }
+
+        /* Main content styles */
+        .settings-section {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-top: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #3f51b5;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #30418f;
+        }
+        
+        .back-button {
+    margin: 20px;
+    text-align: left;
+}
+
+/* Styling for the back arrow link */
+.back-arrow {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <p><a href="admin.html" class="back-arrow">&#8592; Go Back</a></p>
+    <div class="admin-container">
+        <header>
+            <h1 style="font-family : sans-serif">ADMIN SETTINGS</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="services.html">Services</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+        <main>
+            <section class="settings-section">
+                <h2 style="font-family : sans-serif">General Settings</h2><br>
+                <form action="update_settings.php" method="POST">
+                    <label style="font-family : sans-serif" for="company-name">Update Company Name</label>
+                    <input type="text" id="company-name" name="companyName" value="" required>
+                    <br>
+                    <label style="font-family : sans-serif" for="logo">Update Logo</label>
+                    <input type="file" id="logo" name="">
+                    <br>
+                    <label style="font-family : sans-serif" for="contact-email">Update Contact Details</label>
+                    <input type="email" id="contact-email" name="contactEmail" value="" required>
+                    <br>
+                    <button style="font-family : sans-serif" type="submit">SAVE CHANGES</button>
+                </form>
+            </section>
+            <!-- Add more settings sections as needed -->
+        </main>
+    </div>
+</body>
+</html>
